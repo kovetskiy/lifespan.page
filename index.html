@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        github: https://github.com/kovetskiy/lifespan.page
+    -->
+    <head>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+        <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .row {
+            position: relative;
+            width: 100%;
+        }
+        .box {
+            float: left;
+            margin-left: 1px;
+            margin-top: 1px;
+            border: 1px #000 solid;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .grey {
+            background: grey;
+        }
+        #index {
+            display: none;
+            padding: 10px;
+        }
+        </style>
+        <title>Lifespan in weeks</title>
+    </head>
+    <body>
+        <div id="index">
+            <input id="year" placeholder="birthday year" />
+            <input id="month" placeholder="birthday month" />
+            <input id="day" placeholder="birthday day" />
+            <input id="lifespan" placeholder="expected lifespan" />
+            <input id="draw" type="button" value="draw my lifespan in weeks" onclick="setupPath()" />
+        </div>
+        <script src="/index.js"></script>
+    </body>
+</html
+<!--
+vim:ft=javascript.html
+-->
