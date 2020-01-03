@@ -53,7 +53,7 @@ function showBoxes(chunks) {
 
     const birthday = moment({
         year: chunks[1],
-        month: chunks[2],
+        month: chunks[2]-1,
         day: chunks[3]
     });
 
